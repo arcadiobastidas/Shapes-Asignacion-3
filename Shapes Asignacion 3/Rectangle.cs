@@ -57,6 +57,6 @@
     /// <returns></returns>
     public override string ToString()
     {
-        return String.Format(" This shape is a {0} and the Area is {1:n}", GetType(), Area());
+        return String.Format("This is a {0} shape of type {1} and the Area is {2:n}", Type(), GetType(), Area());
     }
 }

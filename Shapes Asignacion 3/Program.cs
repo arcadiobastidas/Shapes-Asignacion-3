@@ -29,16 +29,16 @@ sphere.Ask();
 Shapes[] shapes = { circle, rectangle, cube, sphere };
 
 
-Console.WriteLine("Results\n");
+Console.WriteLine("\nResults\n_________________________\n");
 //Iterating array of shapes
 //If Shape is twodimensional, the area will print to the console. Threedimensional shapes will print volume.
 foreach (Shapes shape in shapes)
 {
+    
     if (shape.Type() == "TwoDimensionalShape") // using inheritance, here we invoke the Type of shape to filter out dimensinal shapes.
     {
         Console.WriteLine(shape.ToString());
-    }
-    else if (shape.Type() == "ThreeDimensionalShapes")
+    } else if (shape.Type() == "ThreeDimensionalShapes")
     {
         Console.WriteLine(shape.ToString());
     }
