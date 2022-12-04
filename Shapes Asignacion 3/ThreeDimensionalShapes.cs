@@ -6,7 +6,7 @@ public abstract class ThreeDimensionalShapes : Shapes
     {
     }
 
-    //Creating abstract Ask method to declare it in inherited twodimensinal shapes. 
+    //Creating abstract Ask method to declare it in inherited twodimensinal shapes.
     //this will be responsible of initializing the object.
     public abstract void Ask();
 

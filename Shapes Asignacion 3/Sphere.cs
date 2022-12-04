@@ -67,9 +67,9 @@
         return area;
     }
 
-    //returning results. 
+    //returning results.
     public override string ToString()
     {
-        return String.Format("This is a {0} shape of type {1}, the volume is {2:n} and area is {3:n}",Type(), GetType(), Volume(), Area());
+        return String.Format("This is a {0} shape of type {1}, the volume is {2:n} and area is {3:n}", Type(), GetType(), Volume(), Area());
     }
 }

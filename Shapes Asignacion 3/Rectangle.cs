@@ -27,7 +27,6 @@
         return area;
     }
 
-
     public override void Ask()
     {
         try

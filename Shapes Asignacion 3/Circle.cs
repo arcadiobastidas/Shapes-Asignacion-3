@@ -6,11 +6,13 @@
     public Circle() : base()
     {
     }
+
     //parameter constructor
     public Circle(double radius)
     {
         this.radius = radius;
     }
+
     //mutator for radius
     public double Radius
     {
@@ -36,8 +38,6 @@
         return area;
     }
 
-
-    
     public override void Ask()
     {
         try

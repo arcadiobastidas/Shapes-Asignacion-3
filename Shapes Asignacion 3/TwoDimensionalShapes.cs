@@ -11,7 +11,7 @@ public abstract class TwoDimensionalShapes : Shapes
     //creating abstract method to calculate area based on twodimensional figure
     public abstract double Area();
 
-    //Creating abstract Ask method to declare it in inherited twodimensinal shapes. 
+    //Creating abstract Ask method to declare it in inherited twodimensinal shapes.
     //this will be responsible of initializing the object.
     public abstract void Ask();
 
