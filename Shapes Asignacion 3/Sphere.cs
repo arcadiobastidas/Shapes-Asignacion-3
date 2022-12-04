@@ -1,16 +1,18 @@
-﻿public class Circle : TwoDimensionalShapes
+﻿public class Sphere : ThreeDimensionalShapes
 {
     private double radius;
 
-    //default constructor
-    public Circle() : base()
+    //declaring default contructor
+    public Sphere() : base()
     {
     }
-    //parameter constructor
-    public Circle(double radius)
+
+    //default parameter constructor
+    public Sphere(double radius)
     {
         this.radius = radius;
     }
+
     //mutator for radius
     public double Radius
     {
@@ -23,32 +25,22 @@
             }
             else
             {
-                throw new ArgumentOutOfRangeException("value");
+                throw new ArgumentException("Radius can't be negative");
             }
         }
     }
 
-    //calculating area of a circule
-    public override double Area()
-    {
-        double area = Math.PI * Math.Pow(Radius, 2);
-
-        return area;
-    }
-
-
-    
     public override void Ask()
     {
         try
         {
             Console.WriteLine($"{GetType()} details:\n");
-            Console.Write("\tEnter radius of circle: ");
+            Console.Write("\tEnter radius of a Sphere: ");
             radius = double.Parse(Console.ReadLine());
 
             if (radius <= 0)
             {
-                Console.WriteLine("Radius can't be 0 or negative!");
+                Console.WriteLine("Side lenght can't be 0 or negative!");
                 Ask();
             }
         }
@@ -59,9 +51,17 @@
         }
     }
 
-    //returning formatted results
+    //Calculating volume of a sphere
+    public override double Volume()
+    {
+        double volume = (4 / 3) * Math.PI * Math.Pow(radius, 3);
+
+        return volume;
+    }
+
+    //returning results. 
     public override string ToString()
     {
-        return String.Format(" This shape is a {0} and the Area is {1:F2}", GetType(), Area());
+        return String.Format(" This shape is a {0} and the volume is {1:F2}", GetType(), Volume());
     }
 }
