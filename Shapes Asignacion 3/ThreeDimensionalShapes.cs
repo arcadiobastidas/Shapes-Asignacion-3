@@ -13,6 +13,8 @@ public abstract class ThreeDimensionalShapes : Shapes
     //creating abstract method to calculate volume based on threedimensinal figures
     public abstract double Volume();
 
+    public abstract double Area();
+
     //returning the type of figure
     public override string Type()
     {

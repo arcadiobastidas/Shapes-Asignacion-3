@@ -3,7 +3,7 @@
 //Intro to program
 
 Console.Write("This program will ask the user the required\nvalues to calculate Area or Volume\nfor ");
-Console.Write("Twodimensional and Threedimensional shapes.\n\n");
+Console.Write("Two dimensional and Three dimensional shapes.\n\n");
 
 //Initializing objects
 var circle = new Circle();
@@ -13,14 +13,14 @@ var cube = new Cube();
 
 //Prompt user to enter required values for Twodimensional objects
 
-Console.WriteLine("Enter information for Twodimensional objects: \n");
+Console.WriteLine("Enter information for Two dimensional objects: \n");
 circle.Ask();
 Console.WriteLine();
 rectangle.Ask();
 
 //Prompt user to enter required values for Thredimensional objects
 
-Console.WriteLine("\nEnter information for Threedimensional objects: \n");
+Console.WriteLine("\nEnter information for Three dimensional objects: \n");
 cube.Ask();
 Console.WriteLine();
 sphere.Ask();

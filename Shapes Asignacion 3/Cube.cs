@@ -60,9 +60,17 @@
         return volume;
     }
 
+    //Calculating surface area of a sphere
+    public override double Area()
+    {
+        double area = 6 * Math.Pow(side, 2);
+
+        return area;
+    }
+
     //returning results
     public override string ToString()
     {
-        return String.Format(" This shape is a {0} and the volume is {1:F2}", GetType(), Volume());
+        return String.Format(" This shape is a {0}, the volume is {1:F2} and area is {2:F2}", GetType(), Volume(), Area());
     }
 }
