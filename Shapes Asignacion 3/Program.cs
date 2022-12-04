@@ -2,7 +2,7 @@
 
 //Intro to program
 
-Console.Write("This program will ask the user the required\nvalues to calculate Area or Volume\nfor ");
+Console.Write("This program will ask the user the required values to calculate Area or Volume for\n");
 Console.Write("Two dimensional and Three dimensional shapes.\n\n");
 
 //Initializing objects
